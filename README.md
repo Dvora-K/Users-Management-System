@@ -11,6 +11,3 @@
   docker run -p 3000:3000 [IMAGE_NAME]
 ## VIEW
   http://localhost:3000/
-
-  ען
-      עןא 
