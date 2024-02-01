@@ -5,7 +5,6 @@
   `` bash
   
   git clone https://github.com/Dvora-K/React-Project.git
-  then:
   
   cd React-Project
 ## BUILD 
