@@ -1,0 +1,34 @@
+$darkBlue: #22272e; // Dark blue color
+$turquoiseGreen: #76e0ab; // Turquoise green color
+
+.UserPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+  min-height: 30vh; // Ensure at least the viewport height
+
+  .col-sm-6 {
+    margin-top: 20px; // Adjust as needed
+
+    button {
+      background-color: $turquoiseGreen;
+      color: white;
+      padding: 12px;
+      margin-top: 10px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover {
+        background-color: darken($turquoiseGreen, 10%);
+      }
+    }
+  }
+
+  .MyModal {
+    // Adjust styles for your modal if necessary
+  }
+}

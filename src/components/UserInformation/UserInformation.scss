@@ -1,0 +1,57 @@
+.UserInformation {
+    $darkBlue: #22272e; // Dark blue color
+    $turquoiseGreen: #76e0ab; // Turquoise green color
+
+    &.row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; // Ensure at least the viewport height
+        background-color: $darkBlue;
+        color: white;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+
+            li {
+                padding: 12px;
+                border-bottom: 1px solid lighten($darkBlue, 10%);
+                font-size: 1.2em; // Adjust font size
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                // Style for specific list items
+                &:nth-child(odd) {
+                    background-color: darken($darkBlue, 5%);
+                }
+            }
+        }
+
+        button {
+            background-color: $turquoiseGreen;
+            color: white;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em; // Adjust font size
+
+            &:hover {
+                background-color: darken($turquoiseGreen, 12%);
+            }
+        }
+    }
+
+    &.col-sm-6 {
+        // Custom styles for the col-sm-6 class
+    }
+}
+
+// Add any additional styles or modifications as needed

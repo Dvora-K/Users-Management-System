@@ -1,0 +1,26 @@
+.User-List {
+  button {
+    width: 50%;
+    height: 80%;
+    background-color: #8ceabb;
+    border-radius: 5px;
+    // padding: 5px;
+  }
+
+
+  .det {
+    background-color: #22272e;
+  }
+
+  .det:hover {
+    background-color: #8ceabb;
+  }
+
+  #search {
+    width: 85%;
+    margin-left: 45px;
+
+  }
+
+  font-family: Helvetica;
+}
