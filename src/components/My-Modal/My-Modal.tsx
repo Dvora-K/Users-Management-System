@@ -10,6 +10,11 @@ interface MyModalProps {
   onCancel: () => void
   title: string
   children: React.ReactNode
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
 }
 
 const MyModal: FC<MyModalProps> = (props: MyModalProps) => {
@@ -20,7 +25,11 @@ const MyModal: FC<MyModalProps> = (props: MyModalProps) => {
     <>
       <Modal
         show={show}
+<<<<<<< HEAD
         onHide={props.onCancel}
+=======
+        onHide={handleClose}
+>>>>>>> origin/main
         onShow={handleShow}
         backdrop="static"
         keyboard={false}

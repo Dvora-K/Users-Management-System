@@ -14,7 +14,11 @@ const UserDetails: FC<UserDetailsProps> = (props: UserDetailsProps) => {
     initialValues: new UserModel("", "", "", ""),
     onSubmit: (newUser: UserModel) => {
       props.AddNewUser(newUser);
+<<<<<<< HEAD
       alert(JSON.stringify(newUser) + " Added successfully")
+=======
+      // alert(JSON.stringify(newUser) + " Added successfully")
+>>>>>>> origin/main
       form.resetForm();
     },
     validationSchema: Yup.object().shape({

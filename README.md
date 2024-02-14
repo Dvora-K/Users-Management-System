@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +45,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+=======
+# React-Project
+  Login system for a system administrator, the system administrator can view a list of users, add a new user to the system, and view the messages sent to him.
+  To view the system application follow the following instructions:
+## DOWNLOAD
+  `` bash
+  
+  git clone https://github.com/Dvora-K/React-Project.git
+  
+  cd React-Project
+## BUILD 
+  [insert value of image name to IMAGE_NAME]
+  
+  docker build -t [IMAGE_NAME] .
+## RUN
+  docker run -p 3000:3000 [IMAGE_NAME]
+## VIEW
+  http://localhost:3000/
+>>>>>>> origin/main

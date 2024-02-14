@@ -10,9 +10,9 @@ const Login: FC<LoginProps> = () => {
 
   return <div className='Login'>
     <nav className="navbar navbar-light" style={{ backgroundColor: "#0e1115" }}>
-      <a style={{color:"#fff"}} onClick={() => { navigate('user-details') }}>Add New User</a>
-      <a style={{color:"#fff"}} onClick={() => { navigate('user-list') }}>User-List</a>
-      <a style={{color:"#fff"}} onClick={() => { navigate('/') }}>Log-in</a>
+      <a style={{ color: "#fff" }} onClick={() => { navigate('user-details') }}>Add New User</a>
+      <a style={{ color: "#fff" }} onClick={() => { navigate('user-list') }}>User-List</a>
+      <a style={{ color: "#fff" }} onClick={() => { navigate('/') }}>Log-in</a>
     </nav>
 
     <br></br> <br></br><br></br><br></br>
@@ -24,7 +24,7 @@ const Login: FC<LoginProps> = () => {
     <div className="form__field">
       <input name='name' type='text' placeholder={'Email'} className='form-control'></input>
     </div>
-    <button onClick={()=>navigate('user-details')}>Log In</button>
+    <button onClick={() => navigate('user-details')}>Log In</button>
   </div>
 
 
