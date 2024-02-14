@@ -8,6 +8,8 @@
   
   cd React-Project
 ## BUILD 
+  [insert value of image name to IMAGE_NAME]
+  
   docker build -t [IMAGE_NAME] .
 ## RUN
   docker run -p 3000:3000 [IMAGE_NAME]
