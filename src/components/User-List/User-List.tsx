@@ -5,18 +5,11 @@ import apiService from '../../services/api.service';
 import Loader from '../Loader/Loader';
 import UserDetails from '../User-Details/User-Details';
 import MyModal from '../My-Modal/My-Modal';
-<<<<<<< HEAD
 import { Outlet, useNavigate } from 'react-router-dom';
-=======
->>>>>>> origin/main
 
 interface UserListProps { }
 
 const UserList = () => {
-<<<<<<< HEAD
-  
-=======
->>>>>>> origin/main
   const [UserList, setUserList] = useState<UserModel[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [FilterList, setFilterList] = useState<UserModel[]>([]);
@@ -24,22 +17,17 @@ const UserList = () => {
   const [userToDelete, setUserToDelete] = useState<UserModel>(new UserModel("", "", "", ""));
   const [isFailed, setIsFailed] = useState<boolean>(false);
   const searchRef = useRef<any>('');
-<<<<<<< HEAD
+
   const navigate = useNavigate();
-=======
->>>>>>> origin/main
 
   useEffect(() => {
     getUsers();
   }, [])
 
-<<<<<<< HEAD
   const goToUserInfo = (id: string) => {
     navigate('/userInformation', { state: id })
   }
 
-=======
->>>>>>> origin/main
   const getUsers = () => {
     apiService.getUserList().then((res) => {
       setIsLoading(false);
@@ -55,11 +43,7 @@ const UserList = () => {
       setFilterList([...UserList])
     }
     else {
-<<<<<<< HEAD
       let filterUserList = UserList.filter((user) => user.name.toLowerCase().startsWith(searchValue));
-=======
-      let filterUserList = FilterList.filter((user) => user.name.toLowerCase().startsWith(searchValue));
->>>>>>> origin/main
       setFilterList(filterUserList);
     }
   }
@@ -87,22 +71,14 @@ const UserList = () => {
   return <div className="User-List">
     <div className="container-fluid">
       <div className='row'>
-<<<<<<< HEAD
         <div className='col-md-4 mt6'>
-=======
-        <div className='col-md-6 mt6'>
->>>>>>> origin/main
           <br></br>
           <UserDetails AddNewUser={AddNewUser} ></UserDetails>
         </div>
-
-<<<<<<< HEAD
         <div className="col-md-8">
-=======
-        <div className="col-md-6">
->>>>>>> origin/main
-          {isModalDisplay ? <MyModal onCancel={onCancel} onConfirm={deleteUserFromList} title='מחיקה' ><p>אתה בטוח שברצונך למחוק את {userToDelete?.name}?</p></MyModal> : ''}
-          {isFailed ? <MyModal title='אופססס' onCancel={() => { setIsFailed(false) }} onConfirm={() => { setIsFailed(false) }} > <p>😖 מחיקת המשתמש נכשלה </p></MyModal> : ""}
+
+          {isModalDisplay ? <MyModal onCancel={onCancel} onConfirm={deleteUserFromList} title='Delete' ><p>Are you sure you want to delete {userToDelete?.name} from the list?</p></MyModal> : ''}
+          {isFailed ? <MyModal title='Opsss...' onCancel={() => { setIsFailed(false) }} onConfirm={() => { setIsFailed(false) }} > <p> Failed to delete user😖</p></MyModal> : ""}
           {isLoading ? <Loader title='Loading'></Loader> :
             <div>
               <br></br>
@@ -114,11 +90,8 @@ const UserList = () => {
                     <th scope="col">UserName</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
-<<<<<<< HEAD
                     <th scope="col">Options</th>
-=======
-                    <th scope="col"></th>
->>>>>>> origin/main
+
                   </tr>
                 </thead>
                 <tbody>
@@ -128,12 +101,9 @@ const UserList = () => {
                       <td>{user.username}</td>
                       <td>{user.name}</td>
                       <td>{user.email}</td>
-<<<<<<< HEAD
                       <button onClick={() => { setUserToDelete(user); setIsModalDisplay(true); }}>delete</button>
                       <button className='det' onClick={() => { goToUserInfo(user.id) }}>more details</button>
-=======
-                      <button onClick={() => { setUserToDelete(user); setIsModalDisplay(true); }}> delete </button>
->>>>>>> origin/main
+
                     </tr>
                   }) : 'No One Found'}
                 </tbody>

@@ -1,6 +1,5 @@
 import axios from "axios";
 export default new class ApiService {
-<<<<<<< HEAD
 
     BASE_URL = "https://jsonplaceholder.typicode.com";
 
@@ -9,7 +8,7 @@ export default new class ApiService {
     }
 
     deleteUser(userId: string) {
-        return axios.delete(`${this.BASE_URL}/users/${userId}`)
+        return axios.delete(`${this.BASE_URL}/usersל/${userId}`)
     }
 
     getUserInfo(userId: string) {
@@ -18,16 +17,4 @@ export default new class ApiService {
     getPosts() {
         return axios.get(`${this.BASE_URL}/posts`)
     }
-=======
-    
-    BASE_URL="https://jsonplaceholder.typicode.com";
-   
-    getUserList(){
-        return axios.get(`${this.BASE_URL}/users`);
-    }
-
-    deleteUser(userId:string){
-        return axios.delete(`${this.BASE_URL}/users/${userId}`)
-    }
->>>>>>> origin/main
 }
