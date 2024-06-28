@@ -9,15 +9,15 @@
   
       cd React-Project
 ## BUILD 
-    [insert value of image name to IMAGE_NAME]
+   [insert value of image name to IMAGE_NAME]
     
-  ``bash
+     ``bash
   
-      docker build -t [IMAGE_NAME] .
+         docker build -t [IMAGE_NAME] .
 ## RUN
- ``bash
+    ``bash
  
-    docker run -p 3000:3000 [IMAGE_NAME]
+       docker run -p 3000:3000 [IMAGE_NAME]
     
 ## VIEW
   in the browser
