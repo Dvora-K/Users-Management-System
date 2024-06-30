@@ -5,9 +5,9 @@
 ## Download
      `` bash
   
-         git clone https://github.com/Dvora-K/React-Project.git
+         git clone https://github.com/Dvora-K/Users-Management-System.git
   
-         cd User-Management-System
+         cd Users-Management-System
 ## Build 
    [insert value of image name to IMAGE_NAME]
     
