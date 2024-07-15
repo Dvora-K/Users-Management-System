@@ -30,3 +30,11 @@ Replace [IMAGE_NAME] with the name of your Docker image.
  ```
 5. **View the application**, open your web browser and navigate to:
 ``` http://localhost:3000/ ```
+
+## Dependencies
+- React
+- React Router
+- Axios
+- Bootstrap
+- Formik
+- Yup
