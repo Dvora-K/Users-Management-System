@@ -31,6 +31,14 @@ Replace [IMAGE_NAME] with the name of your Docker image.
 5. **View the application**, open your web browser and navigate to:
 ``` http://localhost:3000/ ```
 
+## Usage
+
+Once the application is running, you can perform various user management tasks:
+-  **Create User:** Add new users to the system.
+-  **Update User:** Modify existing user details.
+-  **Delete User:** Remove users from the system.
+-  **View User:** Access detailed information about users.
+
 ## Dependencies
 - React
 - React Router
